@@ -1,0 +1,39 @@
+body,html{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; 
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  color: #555!important;
+}
+
+/*    MODAL CARGA     */
+.modal-carga {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../img/loading.gif') 
+                50% 50% 
+                no-repeat;
+}
+body.loading {
+    overflow: hidden;   
+}
+body.loading .modal-carga {
+    display: block;
+}
+
+
+/*    SOMBRA SENCILLA     */
+.shadow{
+  -webkit-box-shadow: 1px 1px 3px #333;
+  -moz-box-shadow: 1px 1px 3px #333;
+  box-shadow: 1px 1px 3px #333;
+}
